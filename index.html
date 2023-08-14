@@ -5,69 +5,69 @@
     <link rel="icon" href="tmp.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-<div class="flex flex-cols-2 gap-1 p-3 border-b-2 border-gray-300 mx-4">
-    <div class="flex w-16 h-16">
-        <img src="tmp.png" alt="Logo">
-    </div>
-    <div class="flex bg-white w-full items-center justify-between py-2 font-bold">
-        <div class="p-3">
-            
+<body class="text-white bg-gray-400">
+    <nav class="bg-gray-700 p-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                </svg>
+                <a href="#" class="text-white font-bold text-lg">Security Questionnaire - Company Name</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="index.html" class="text-white hover:underline">Home</a>
+                <a href="thanks.html" class="text-white hover:underline">Page 2</a>
+                <a href="#" class="text-white hover:underline">Page 3</a>
+            </div>
         </div>
-        <div class="p-3">
-            <h1>Security Questionnaire - Company Name</h1>
-        </div>
-    </div>
-</div>
+    </nav>
     <form id="questionnaireForm">
         <div class="grid grid-cols-3 gap-4 pt-3 mx-4">
-            <div class="p-4 bg-red-200 flex items-center justify-center">
+            <div class="p-4 bg-gray-600 flex items-center justify-around">
                 <label for="name">Name: </label>
                 <input type="text" id="name" name="name" required>
             </div>
-            <div class="p-4 bg-green-200 flex items-center justify-center">
+            <div class="p-4 bg-gray-600 flex items-center justify-around">
                 <label for="age">Company: </label>
                 <input type="number" id="age" name="age" required>
             </div>
-            <div class="p-4 bg-blue-200 flex items-center justify-center">
+            <div class="p-4 bg-gray-600 flex items-center justify-around">
                 <label for="email">Email: </label>
                 <input type="email" id="email" name="email" required>
             </div>
-            <div class="p-4 bg-yellow-200 flex items-center justify-center">
-                <label for="?">Other questions to be added: </label>
+            <div class="p-4 bg-gray-600 flex items-center justify-around">
+                <label for="?">Other: </label>
                 <input type="?" id="?" name="?" required>
             </div>
-            <div class="p-4 bg-purple-200 flex items-center justify-center">
-                <label for="?">Other questions to be added: </label>
+            <div class="p-4 bg-gray-600 flex items-center justify-around">
+                <label for="?">Questions: </label>
                 <input type="?" id="?" name="?" required>
             </div>
-            <div class="p-4 bg-red-200">
-                <label for="?">Other questions to be added: </label>
+            <div class="p-4 bg-gray-600 flex items-center justify-around">
+                <label for="?">To: </label>
                 <input type="?" id="?" name="?" required>
             </div>
-            <div class="p-4 bg-green-200 flex items-center justify-center">
-                <label for="?">Other questions to be added: </label>
+            <div class="p-4 bg-gray-600 flex items-center justify-around">
+                <label for="?">Be: </label>
                 <input type="?" id="?" name="?" required>
             </div>
-            <div class="p-4 bg-blue-200 flex items-center justify-center">
-                <label for="?">Other questions to be added: </label>
+            <div class="p-4 bg-gray-600 flex items-center justify-around">
+                <label for="?">Added: </label>
                 <input type="?" id="?" name="?" required>
             </div>
-            <div class="p-4 bg-yellow-200">
-                <label for="?">Other questions to be added: </label>
+            <div class="p-4 bg-gray-600 flex items-center justify-around">
+                <label for="?">Soon: </label>
                 <input type="?" id="?" name="?" required>
             </div>
 
-            <div class="p-4 bg-white">
+            <div class="p-4 bg-gray-400 flex items-center justify-around">
             </div>
 
-            <div class="p-4 bg-purple-200 flex items-center justify-center">
-                <div class="rounded-md bg-gray-100 w-min p-1 px-2">
-                    <button type="submit">Submit</button>
-                </div>
+            <div class="bg-gray-600 flex shadow-md rounded-md">
+                <button type="submit" class="w-full">Submit</button>
             </div>
 
-            <div class="p-4 bg-white">
+            <div class="p-4 bg-gray-400 flex items-center justify-around">
             </div>
 
         </div>
