@@ -2,31 +2,67 @@
 <html>
 <head>
     <title>Questionnaire</title>
-    <style>
-        /* Add your CSS styles here */
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Questionnaire</h1>
+<div class="bg-gray-100 w-full flex items-center justify-center py-2 font-sans">
+    <div class="p-g p-2">
+        <h1>Security Questionnaire</h1>
+    </div>
+</div>
     <form id="questionnaireForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="p-4 bg-red-200 flex items-center justify-center">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="p-4 bg-green-200 flex items-center justify-center">
+                <label for="age">Company: </label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="p-4 bg-blue-200 flex items-center justify-center">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="p-4 bg-yellow-200 flex items-center justify-center">
+                <label for="?">Other questions to be added: </label>
+                <input type="?" id="?" name="?" required>
+            </div>
+            <div class="p-4 bg-purple-200 flex items-center justify-center">
+                <label for="?">Other questions to be added: </label>
+                <input type="?" id="?" name="?" required>
+            </div>
+            <div class="p-4 bg-red-200">
+                <label for="?">Other questions to be added: </label>
+                <input type="?" id="?" name="?" required>
+            </div>
+            <div class="p-4 bg-green-200 flex items-center justify-center">
+                <label for="?">Other questions to be added: </label>
+                <input type="?" id="?" name="?" required>
+            </div>
+            <div class="p-4 bg-blue-200 flex items-center justify-center">
+                <label for="?">Other questions to be added: </label>
+                <input type="?" id="?" name="?" required>
+            </div>
+            <div class="p-4 bg-yellow-200">
+                <label for="?">Other questions to be added: </label>
+                <input type="?" id="?" name="?" required>
+            </div>
 
-        <label for="age">Company:</label>
-        <input type="number" id="age" name="age" required>
-        <br>
+            <div class="p-4 bg-white">
+            </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="?">Other questions to be added:</label>
-        <input type="?" id="?" name="?" required>
-        <br>
+            <div class="p-4 bg-purple-200 flex items-center justify-center">
+                <div class="rounded-md bg-gray-100 w-min p-1 px-2">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
 
-        <button type="submit">Submit</button>
+            <div class="p-4 bg-white">
+            </div>
+
+        </div>
     </form>
-
     <div id="result"></div>
 
     <script>
@@ -50,6 +86,7 @@
 
                 const result = await response.json();
                 document.getElementById('result').textContent = `Submitted: ${JSON.stringify(result)}`;
+                window.location.href = '/thanks.html'; // Change to your actual thanks page URL
             } catch (error) {
                 console.error('Error:', error);
             }
