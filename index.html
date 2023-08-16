@@ -22,57 +22,55 @@
         </div>
     </nav>
     <form id="questionnaireForm">
-        <div class="grid grid-cols-3 gap-4 pt-3 mx-4">
+        <div class="grid grid-cols-2 gap-4 pt-3 mx-4 min-h-screen py-4">
             <div class="p-4 bg-gray-600 flex items-center justify-around">
-                <label for="name">Name: </label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="p-4 bg-gray-600 flex items-center justify-around">
-                <label for="age">Company: </label>
-                <input type="number" id="age" name="age" required>
+                <label for="one">Question: </label>
             </div>
             <div class="p-4 bg-gray-600 flex items-center justify-around">
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email" required>
+                <input type="text" id="one" name="one" required>
             </div>
             <div class="p-4 bg-gray-600 flex items-center justify-around">
-                <label for="?">Other: </label>
-                <input type="?" id="?" name="?" required>
+                <label for="two">Question: </label>
             </div>
             <div class="p-4 bg-gray-600 flex items-center justify-around">
-                <label for="?">Questions: </label>
-                <input type="?" id="?" name="?" required>
+                <input type="text" id="two" name="two" required>
             </div>
             <div class="p-4 bg-gray-600 flex items-center justify-around">
-                <label for="?">To: </label>
-                <input type="?" id="?" name="?" required>
+                <label for="one">Question: </label>
             </div>
             <div class="p-4 bg-gray-600 flex items-center justify-around">
-                <label for="?">Be: </label>
-                <input type="?" id="?" name="?" required>
+                <input type="text" id="one" name="one" required>
             </div>
             <div class="p-4 bg-gray-600 flex items-center justify-around">
-                <label for="?">Added: </label>
-                <input type="?" id="?" name="?" required>
+                <label for="two">Question: </label>
             </div>
             <div class="p-4 bg-gray-600 flex items-center justify-around">
-                <label for="?">Soon: </label>
-                <input type="?" id="?" name="?" required>
+                <input type="text" id="two" name="two" required>
             </div>
-
-            <div class="p-4 bg-gray-400 flex items-center justify-around">
+            <div class="p-4 bg-gray-600 flex items-center justify-around">
+                <label for="one">Question: </label>
             </div>
-
-            <div class="bg-gray-600 flex shadow-md rounded-md">
+            <div class="p-4 bg-gray-600 flex items-center justify-around">
+                <input type="text" id="one" name="one" required>
+            </div>
+            <div class="p-4 bg-gray-600 flex items-center justify-around">
+                <label for="two">Question: </label>
+            </div>
+            <div class="p-4 bg-gray-600 flex items-center justify-around">
+                <input type="text" id="two" name="two" required>
+            </div>
+            <div class="bg-gray-600 flex shadow-md rounded-md col-span-2">
                 <button type="submit" class="w-full">Submit</button>
             </div>
-
-            <div class="p-4 bg-gray-400 flex items-center justify-around">
-            </div>
-
         </div>
     </form>
     <div id="result"></div>
+    <footer class="bg-gray-900 text-white p-8 mt-auto">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2023 Your Company. All rights reserved.</p>
+          <p class="mt-2">123 Main Street, City, Country</p>
+        </div>
+    </footer>
 
     <script>
         document.getElementById('questionnaireForm').addEventListener('submit', async function(event) {
